@@ -41,7 +41,7 @@ void MyTcpServer::slotServerRead(){
         QByteArray array = temp->readAll();
         res += array;
     }
-    temp->write(res.toUtf8());
+    temp->write(parsing(res.toUtf8()).toUtf8());
 }
 
 void MyTcpServer::slotClientDisconnected(){

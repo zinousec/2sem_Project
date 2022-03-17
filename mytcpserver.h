@@ -7,6 +7,7 @@
 #include <QtNetwork>
 #include <QByteArray>
 #include <QDebug>
+#include "functions.h"
 
 class MyTcpServer : public QObject
 {
