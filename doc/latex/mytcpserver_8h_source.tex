@@ -1,0 +1,41 @@
+\hypertarget{mytcpserver_8h_source}{}\doxysection{mytcpserver.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MYTCPSERVER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MYTCPSERVER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QTcpServer>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QTcpSocket>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QtNetwork>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QByteArray>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}functions.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}database.h"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_my_tcp_server}{MyTcpServer}} : \textcolor{keyword}{public} QObject}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     Q\_OBJECT}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_my_tcp_server_acf367c4695b4d160c7a2d25c2afaaec4}{MyTcpServer}}(QObject *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_my_tcp_server}{\string~MyTcpServer}}();}
+\DoxyCodeLine{19 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_tcp_server_a0ba7316ffe1a26c57fabde9e74b6c8dc}{slotNewConnection}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_tcp_server_a3e040c49dbefd65b9a58ab662fc9f7a2}{slotClientDisconnected}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_my_tcp_server_ab4a64d2eab985d723090963f5c8a2882}{slotServerRead}}();}
+\DoxyCodeLine{24 \textcolor{keyword}{private}:}
+\DoxyCodeLine{25     QTcpServer * mTcpServer;}
+\DoxyCodeLine{26     QMap<int, QTcpSocket *> mTcpSocket;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} server\_status;}
+\DoxyCodeLine{28 \};}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MYTCPSERVER\_H}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

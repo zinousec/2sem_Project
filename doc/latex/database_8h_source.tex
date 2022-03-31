@@ -1,0 +1,30 @@
+\hypertarget{database_8h_source}{}\doxysection{database.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SQLDB\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SQLDB\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QCoreApplication>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QVariant>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QSqlDatabase>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QSqlQuery>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QSqlError>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QSqlRecord>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_s_q_ldb}{SQLdb}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     QSqlQuery query;}
+\DoxyCodeLine{18     QSqlDatabase db;}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_s_q_ldb_a7cb31c0c713a417b4ee483206c64897e}{SQLdb}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_s_q_ldb_af05bf2a0be00406b57451d4a58fa9c2e}{\string~SQLdb}}();}
+\DoxyCodeLine{22     QString \mbox{\hyperlink{class_s_q_ldb_af5cd8aeecbd8edce4f11772cb0070cf7}{insert\_new}}(QString log, QString pass);}
+\DoxyCodeLine{23     QString \mbox{\hyperlink{class_s_q_ldb_aa84a8e876c66af49db49a15e95c51899}{auth}}(QString log, QString pass);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_s_q_ldb_a4dc5969b3cec1a459ee49f68e09dfdeb}{print\_db}}();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// SQLDB\_H}}
+
+\end{DoxyCode}

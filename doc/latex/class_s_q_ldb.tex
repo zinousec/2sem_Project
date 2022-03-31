@@ -1,0 +1,81 @@
+\hypertarget{class_s_q_ldb}{}\doxysection{SQLdb Class Reference}
+\label{class_s_q_ldb}\index{SQLdb@{SQLdb}}
+
+
+Класс для работы с БД  
+
+
+
+
+{\ttfamily \#include $<$database.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_q_ldb_a7cb31c0c713a417b4ee483206c64897e}\label{class_s_q_ldb_a7cb31c0c713a417b4ee483206c64897e}} 
+{\bfseries SQLdb} ()
+\begin{DoxyCompactList}\small\item\em Конструктор объекта класса \mbox{\hyperlink{class_s_q_ldb}{SQLdb}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_q_ldb_af05bf2a0be00406b57451d4a58fa9c2e}\label{class_s_q_ldb_af05bf2a0be00406b57451d4a58fa9c2e}} 
+{\bfseries $\sim$\+SQLdb} ()
+\begin{DoxyCompactList}\small\item\em Деструктор объекта класса \mbox{\hyperlink{class_s_q_ldb}{SQLdb}}. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_s_q_ldb_af5cd8aeecbd8edce4f11772cb0070cf7}{insert\+\_\+new}} (QString log, QString pass)
+\begin{DoxyCompactList}\small\item\em Функция для добавления новой записи в БД \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_s_q_ldb_aa84a8e876c66af49db49a15e95c51899}{auth}} (QString log, QString pass)
+\begin{DoxyCompactList}\small\item\em Функция аутентификации пользователя \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_q_ldb_a4dc5969b3cec1a459ee49f68e09dfdeb}\label{class_s_q_ldb_a4dc5969b3cec1a459ee49f68e09dfdeb}} 
+void {\bfseries print\+\_\+db} ()
+\begin{DoxyCompactList}\small\item\em Функция вывода всех записей БД \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с БД 
+
+В данном классе реализованы необходимые для удобной работы с БД функции и объекты. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_q_ldb_aa84a8e876c66af49db49a15e95c51899}\label{class_s_q_ldb_aa84a8e876c66af49db49a15e95c51899}} 
+\index{SQLdb@{SQLdb}!auth@{auth}}
+\index{auth@{auth}!SQLdb@{SQLdb}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily QString SQLdb\+::auth (\begin{DoxyParamCaption}\item[{QString}]{log,  }\item[{QString}]{pass }\end{DoxyParamCaption})}
+
+
+
+Функция аутентификации пользователя 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & Логин пользователя \\
+\hline
+{\em pass} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает auth-\/success, если введённая пара логин\textbackslash{}пароль была найдена в БД 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_q_ldb_af5cd8aeecbd8edce4f11772cb0070cf7}\label{class_s_q_ldb_af5cd8aeecbd8edce4f11772cb0070cf7}} 
+\index{SQLdb@{SQLdb}!insert\_new@{insert\_new}}
+\index{insert\_new@{insert\_new}!SQLdb@{SQLdb}}
+\doxysubsubsection{\texorpdfstring{insert\_new()}{insert\_new()}}
+{\footnotesize\ttfamily QString SQLdb\+::insert\+\_\+new (\begin{DoxyParamCaption}\item[{QString}]{log,  }\item[{QString}]{pass }\end{DoxyParamCaption})}
+
+
+
+Функция для добавления новой записи в БД 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & Логин пользователя \\
+\hline
+{\em pass} & Пароль пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Если пара найдена в базе, то регистрация считается успешной. Если в БД найден только логин, а пароль не совпадает -\/ регистрация провалена. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+database.\+h\item 
+database.\+cpp\end{DoxyCompactItemize}
